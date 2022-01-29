@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__logo">
+          <i class="fab fa-medium-m"></i>
+          <p class="nav__logo--header">Minimalista</p>
+        </div>
+
+        <div class="nav__links">
+          <ul class="nav__links--list">
+            <li class="nav__link">
+              <a href="">Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="" class="text--black">About Us</a>
+            </li>
+            <li class="nav__link">
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div id="hamburger__icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile__menu">
+            <li class="menu__list">
+              <a href="">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="">About Us</a>
+            </li>
+            <li class="menu__list">
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="about">
+        <div class="about__container">
+          <div class="about__header">
+            <p class="about__header">About Us</p>
+          </div>
+          <div class="about__para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              corrupti corporis ut dolorum voluptas maxime earum, nemo velit
+              porro explicabo ipsa ad accusamus illo assumenda nostrum.
+              Voluptatem odio reiciendis a.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="cards">
+        <div class="cards__container">
+          <div class="card">
+            <img src="./assets/room1.png" alt="" class="card__img" />
+
+            <div class="card__description">
+              <div class="card__header">
+                <h3>Lorem ipsum dolor sit, amet</h3>
+              </div>
+
+              <div class="card__para">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                  temporibus aliquid quae totam id quo nam suscipit ipsam
+                  accusamus numquam distinctio, dolores non aspernatur maxime
+                  eaque facilis excepturi eveniet labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/room2.png" alt="" class="card__img" />
+
+            <div class="card__description">
+              <div class="card__header">
+                <h3>Lorem ipsum dolor sit, amet</h3>
+              </div>
+
+              <div class="card__para">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                  temporibus aliquid quae totam id quo nam suscipit ipsam
+                  accusamus numquam distinctio, dolores non aspernatur maxime
+                  eaque facilis excepturi eveniet labore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./assets/room3.png" alt="" class="card__img" />
+
+            <div class="card__description">
+              <div class="card__header">
+                <h3>Lorem ipsum dolor sit, amet</h3>
+              </div>
+
+              <div class="card__para">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                  temporibus aliquid quae totam id quo nam suscipit ipsam
+                  accusamus numquam distinctio, dolores non aspernatur maxime
+                  eaque facilis excepturi eveniet labore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="team__container">
+          <div class="team__description">
+            <div class="team__header">
+              <p>- Our Team -</p>
+            </div>
+
+            <div class="team__para">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                similique, molestias quaerat ipsum consequatur esse maxime eaque
+                quae, natus nostrum accusantium?
+              </p>
+            </div>
+          </div>
+          <section id="team__members">
+            <div class="team__members--container">
+              <div class="chevron">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="member">
+                <img src="./assets/team1.png" alt="" class="member__img" />
+                <div class="member__description">
+                  <div class="member__name">
+                    <p>Melissa Style</p>
+                  </div>
+                  <div class="member__job">
+                    <p>Graphic Designer</p>
+                  </div>
+                </div>
+                <div class="member__social">
+                  <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="google">
+                    <i class="fab fa-google"></i>
+                  </div>
+                  <div class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="member">
+                <img src="./assets/team2.png" alt="" class="member__img" />
+                <div class="member__description">
+                  <div class="member__name">
+                    <p>Frank Star</p>
+                  </div>
+                  <div class="member__job">
+                    <p>Boss</p>
+                  </div>
+                </div>
+                <div class="member__social">
+                  <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="google">
+                    <i class="fab fa-google"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="member">
+                <img src="./assets/team3.png" alt="" class="member__img" />
+                <div class="member__description">
+                  <div class="member__name">
+                    <p>Jane Naismith</p>
+                  </div>
+                  <div class="member__job">
+                    <p>Graphic Designer</p>
+                  </div>
+                </div>
+                <div class="member__social">
+                  <div class="google">
+                    <i class="fab fa-google"></i>
+                  </div>
+                  <div class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="member">
+                <img src="./assets/team4.png" alt="" class="member__img" />
+                <div class="member__description">
+                  <div class="member__name">
+                    <p>Mark Stoner</p>
+                  </div>
+                  <div class="member__job">
+                    <p>Web Developer</p>
+                  </div>
+                </div>
+                <div class="member__social">
+                  <div class="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="google">
+                    <i class="fab fa-google"></i>
+                  </div>
+                  <div class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="chevron">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social">
+        <div class="footer__social">
+          <div class="footer__facebook">
+            <i class="fab fa-facebook-square logo"> </i>
+            <a href="https://www.facebook.com/" target="_blank"> FACEBOOK</a>
+          </div>
+          <div class="footer__twitter">
+            <i class="fab fa-twitter-square logo"> </i
+            ><a href="https://www.twitter.com/" target="_blank">TWITTER</a>
+          </div>
+          <div class="footer__instagram">
+            <i class="fab fa-instagram-square logo"></i
+            ><a href="https://www.instagram.com/" target="_blank"> INSTAGRAM</a>
+          </div>
+          <div class="footer__linkedin">
+            <i class="fab fa-linkedin logo"> </i
+            ><a href="https://www.linkedin.com/" target="_blank">LINKEDIN</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="address">
+            <h4 class="contact__header">Company Address</h4>
+            <p class="contact__info">
+              Responsive Street 7 <br />London - United Kingdom <br />Europe
+            </p>
+          </div>
+          <div class="email">
+            <h4 class="contact__header">E-mail</h4>
+            <div class="contact__info">
+              <p class="contact__email">contact@yourdomain.com</p>
+              <p class="office__email">office@yourdomain.com</p>
+            </div>
+          </div>
+          <div class="num">
+            <h4 class="contact__header">Phone Numbers</h4>
+            <div class="contact__info">
+              <p class="num1">0123 4567 891 01</p>
+              <p class="num2">0123 4567 891 01</p>
+              <p class="num3">0123 4567 891 01</p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <div class="copyright">
+          <p class="copyright__para">Copyright 2045 - Your Domain Name</p>
+          <p class="design">Design and coding by Responsee Team</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

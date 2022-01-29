@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.column__preview {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+p {
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-size: 28px;
+  line-height: 44px;
+  padding: 0 36px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 32px;
+  padding-bottom: 64px;
+}
+
+.preview__card {
+  width: calc(100% / 3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+button {
+  width: 275px;
+  height: 80px;
+  font-size: 24px;
+  border-radius: 46px;
+  border-style: none;
+  justify-content: end;
+  cursor: not-allowed;
+}
+
+/*
+
+FORMAT FOR ALL 3
+
+
+*/
+
+.sedan__landing,
+.suv__landing,
+.lux__landing {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 900px;
+  width: 500px;
+  border-radius: 32px;
+  padding-top: 64px;
+  box-shadow: 0 15px 24px #242424;
+}
+
+.sedan__logo--img,
+.suv__logo--img,
+.lux__logo--img {
+  width: 100px;
+  height: 80px;
+}
+
+.sedan__img--wrapper,
+.suv__img--wrapper,
+.lux__img--wrapper {
+  margin: 0;
+  padding-left: 64px;
+}
+
+.suv__description,
+.sedan__description,
+.lux__description {
+  margin: 32px;
+  padding-bottom: 100px;
+}
+
+.sedan__button,
+.lux__button,
+.suv__button {
+  margin-left: 46px;
+}
+
+/*
+
+SEDANS
+
+*/
+
+.sedan__landing {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedan__button {
+  color: hsl(31, 77%, 52%);
+}
+
+/*
+
+SUV
+
+*/
+
+.suv__landing {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suv__button {
+  color: hsl(184, 100%, 22%);
+}
+
+/*
+
+LUXURY
+
+*/
+
+.lux__landing {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.lux__button {
+  color: hsl(179, 100%, 13%);
+}
+
+/* 
+
+SMALL PHONES
+
+*/
+
+@media (max-width: 400px) {
+  .column__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .preview__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 32px auto;
+    max-width: 325px;
+  }
+
+  .sedan__landing,
+  .suv__landing,
+  .lux__landing {
+    width: fit-content;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .suv__description,
+  .lux__description,
+  .sedan__description {
+    padding-bottom: 0px;
+  }
+  .sedan__button,
+  .lux__button,
+  .suv__button {
+    border-radius: 150px;
+    margin-left: 0 auto;
+  }
+}

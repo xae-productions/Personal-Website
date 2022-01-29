@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xavier Doss</title>
+    <link rel="stylesheet" href="/pages/projects/style.css" />
+    <script
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/asset/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/asset/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/asset/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <img
+          src="/asset/images/Xae Productions Logo-B.png"
+          alt=""
+          class="personal__logo"
+        />
+
+        <div class="nav__links--container">
+          <ul class="nav__links--list">
+            <li class="nav__link">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="nav__link">
+              <a href="/index.html">Languages</a>
+            </li>
+            <li class="nav__link">
+              <a href="/pages/projects/index.html">Projects</a>
+            </li>
+            <!--
+            <li class="nav__link--primary">
+              <a href="">Contact</a>
+            </li>-->
+          </ul>
+        </div>
+        <!--
+            MOBILE MENU
+        -->
+        <div id="hamburger__icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile__menu">
+            <li class="menu__list">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#languages">Languages</a>
+            </li>
+            <li class="menu__list">
+              <a href="">Projects</a>
+            </li>
+            <!--
+            <li class="menu__list">
+              <a href="">Contact</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="featured">
+      <div class="section__container">
+        <div class="header__container">
+          <p class="section__header">Featured Projects</p>
+        </div>
+        <ul class="project__list">
+            <!--Library Project-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/e-commerce/index-1.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/project-1.png"
+                      alt="Library Project Demo"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Library</span>
+                    <span class="project__para"
+                      >Library is a demo e-commerce that displays HTML and CSS.
+                      It is also compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+
+            <!--Responsive Landing Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/Module 3 Project/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Landing Page Screenshot .png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Landing Page</span>
+                    <span class="project__para"
+                      >This is a a responsive landing page that is also
+                      compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+      </div>
+    </section>
+
+    <!--
+
+
+        RECENT PROJECTS
+
+
+    -->
+
+    <section id="recent">
+      <div class="section__container">
+        <div class="header__container">
+          <p class="section__header recent">Recent Projects</p>
+        </div>
+
+        <div class="projects">
+          <ul class="project__list">
+            <!--Library Project-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/Module 3 Project/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Landing Page Screenshot .png"
+                      alt="Library Project Demo"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Library</span>
+                    <span class="project__para"
+                      >Library is a demo e-commerce that displays HTML and CSS.
+                      It is also compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--Responsive Landing Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/Responsive Website/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Responsive Landing Page Screenshot .png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Landing Page</span>
+                    <span class="project__para"
+                      >This is a a responsive landing page that is also
+                      compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--
+
+
+        ALL PROJECTS
+
+    -->
+    <section id="all__projects">
+      <div class="section__container">
+        <div class="header__container">
+          <p class="section__header">All Projects</p>
+        </div>
+
+        <div class="projects">
+          <ul class="project__list">
+            <!--Library Project-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/Module 3 Project/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Landing Page Screenshot .png"
+                      alt="Library Project Demo"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Library</span>
+                    <span class="project__para"
+                      >Library is a demo e-commerce that displays HTML and CSS.
+                      It is also compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--Responsive Landing Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/Responsive Website/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Responsive Landing Page Screenshot .png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Landing Page</span>
+                    <span class="project__para"
+                      >This is a a responsive landing page that is also
+                      compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--Responsive Landing Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/My Blog Project/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/MyBlog Screenshot.png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">MyBlog</span>
+                    <span class="project__para"
+                      >MyBlog is a static landing page for blogs</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--Library Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/e-commerce/index-1.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/project-1.png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Library</span>
+                    <span class="project__para"
+                      >Library is a demo e-commerce that displays HTML and CSS.
+                      It is also compatible with mobile devices</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--My Blog Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/MyTube"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/MyTube.png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">MyTube Page</span>
+                    <span class="project__para"
+                      >MyTube is similar to Youtube and involves with connecting and handling different pages  </span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--Preview Card Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/3-Column Preview Card/index-1.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Preview Card Project.png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Preview Cards</span>
+                    <span class="project__para"
+                      >Column Preview Card is a project from frontendmentor.io,
+                      that displays basic HTML and CSS
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+            <!--Single Price Grid Landing Page-->
+            <div class="project ">
+              <li class="project__container">
+                <a
+                  href="/asset/Single Price Grid Component/index.html"
+                  target="_blank"
+                  class="project__anchor"
+                >
+                  <figure class="project__img--wrapper">
+                    <img
+                      src="/asset/images/Single Price Grid Component.png"
+                      alt="Landing Page"
+                      class="project__img"
+                    />
+                  </figure>
+                  <div class="project__description">
+                    <span class="project__header">Price Grid</span>
+                    <span class="project__para"
+                      >This project is from frontendmentor.io. It displays basic HTML and CSS</span
+                    >
+                  </div>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+        <div class="footer__row">
+          <!--Personal Logo-->
+          <a href="#" class="footer__anchor">
+           <figure class="footer__logo" >
+             <img src="/asset/images/Xae Productions Logo-B.png" class="footer__logo--img"alt="">
+           </figure>
+           <span class="footer__logo--popper">
+             Top
+             <i class="fas fa-arrow-up"></i>
+           </span>
+          </a>        
+          <ul class="footer__links--list">
+          
+          <li class="footer__link--primary">
+            <i class="far fa-envelope-open"></i> <a href="" class="footer__contact">Contact Me</a>
+          </li>
+        </ul>
+       </div>
+
+     </footer>
+    <script src="/index.js"></script>
+  </body>
+</html>

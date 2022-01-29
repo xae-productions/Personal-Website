@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pushster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+p {
+  color: rgb(255, 253, 253);
+}
+
+/*
+
+Landing
+
+*/
+
+#landing {
+  background-image: url("./assest/mountains.jpg");
+  height: 1100px;
+  width: 100%;
+}
+
+/*
+
+Nav
+
+*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 48px;
+  padding-bottom: 12px;
+}
+
+.nav__header {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Pushster", cursive;
+  letter-spacing: 4px;
+  margin: 16px;
+  font-size: 32px;
+  color: #c5c5c515;
+}
+
+.nav__links--list,
+.nav__links--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__links {
+  padding: 0 16px;
+  color: white;
+  font-size: 24px;
+}
+
+.nav__about,
+.nav__contact{
+  cursor: not-allowed;
+}
+
+
+/*
+
+Header
+
+*/
+header {
+  height: 850px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-left: 48px;
+}
+
+.landing__header {
+  font-size: 64px;
+  padding-bottom: 24px;
+}
+
+.landing__subheader {
+  font-size: 36px;
+}
+
+/*
+
+First Section
+
+*/
+#first__section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  max-width: 1600px;
+
+  margin: 48px;
+}
+
+.first__section--description {
+  padding-left: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.first__section--header {
+  font-size: 32px;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 750px;
+}
+
+.first__section--para {
+  width: 750px;
+  font-size: 24px;
+}
+
+.first__section--img {
+  height: 400px;
+  width: 600px;
+}
+
+.first__section--img__wrapper {
+  margin: 0px;
+}
+
+.first__section--para {
+  color: black;
+}
+
+.introvert__url {
+  color: rgb(121, 2, 201);
+}
+
+.introvert__url:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/*
+
+Second Section 
+
+*/
+
+#second__section {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+
+  padding: 48px;
+}
+
+.second__section--description {
+  padding-left: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.second__section--header {
+  font-size: 32px;
+  color: white;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 750px;
+}
+
+.second__section--para {
+  width: 750px;
+  font-size: 24px;
+}
+
+.second__section--img {
+  height: 400px;
+  width: 600px;
+
+}
+
+.second__section--img__wrapper {
+  margin: 0px;
+}
+
+
+/*
+
+Third Section
+
+*/
+
+#third__section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  max-width: 1600px;
+
+  margin: 48px;
+}
+
+.third__section--description {
+  padding-left: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.third__section--header {
+  font-size: 32px;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 750px;
+}
+
+.third__section--para {
+  width: 750px;
+  font-size: 24px;
+}
+
+.third__section--img {
+  height: 400px;
+  width: 600px;
+}
+
+.third__section--img__wrapper {
+  margin: 0px;
+}
+
+.third__section--para {
+  color: black;
+}
+
+
+/*
+
+Footer 
+
+*/
+
+footer{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column ;
+}
+
+
+.footer__header {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Pushster", cursive;
+  letter-spacing: 4px;
+  margin: 16px;
+  font-size: 32px;
+}
+
+.footer__links--list,
+.footer__links--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.footer__links {
+  padding: 0 16px;
+  color: white;
+  font-size: 24px;
+}
+
+.footer__about,
+.footer__contact{
+  cursor: not-allowed;
+}

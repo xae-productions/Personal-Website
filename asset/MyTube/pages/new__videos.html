@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTube</title>
+    <link rel="stylesheet" href="/asset/MyTube/pages__style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing">
+      <div class="landing__container">
+        <nav>
+          <div class="nav__header">
+            <a href="/MyTube/index.html" class="nav__header--logo"
+              >MyTube<i class="fab fa-youtube"></i
+            ></a>
+          </div>
+
+          <ul class="nav__links-list">
+            <li class="nav__links">
+              <a href="/asset/MyTube/index.html">Home</a>
+            </li>
+            <li class="nav__links">
+              <a href="/asset/MyTube/pages/basketball__landing.html"
+                >Basketball
+              </a>
+            </li>
+            <li class="nav__links">
+              <a href="/asset/MyTube/pages/gaming__landing.html">Gaming</a>
+            </li>
+            <li class="nav__links">
+              <a href="/asset/MyTube/pages/music__landing.html">Music</a>
+            </li>
+            <li class="nav__links">
+              <a href="/asset/MyTube/pages/new__videos.html">New Video</a>
+            </li>
+          </ul>
+        </nav>
+
+    <form action="new__video">
+      <h2>Add New Video</h2>
+
+      <div class="title">
+        <label for="title">Video Title</label><br />
+        <input
+          type="text"
+          id="title"
+          name="video__title"
+          placeholder="Enter Video Name"
+          required
+        />
+      </div>
+
+      <br /><br />
+
+      <div class="description">
+        <label for="description">Description</label><br />
+        <textarea
+          name="description"
+          id="description"
+          cols="50"
+          rows="10"
+          placeholder="Enter video description"
+        ></textarea>
+      </div>
+
+      <br /><br />
+
+      <div class="file">
+        <input type="file" name="video__file" id="myfile" />
+      </div>
+
+      <br /><br />
+
+      <div class="collection">
+        <select name="collection__type" id="collection__type">
+          <option value="">Choose Collection</option>
+          <option value="basketball__collection">Basketball Highlights</option>
+          <option value="gaming__collection">Gaming</option>
+          <option value="music__collection">Music</option>
+        </select>
+      </div>
+      <br /><br />
+
+      <div class="privacy">
+        <label for="privacy" name="public"></label>
+        <input type="radio" name="privacy" id="public" />Public
+        <label for="privacy" name="privacy"></label>
+        <input type="radio" name="privacy" id="private" />Private
+      </div>
+
+      <br /><br />
+
+      <div class="new__video">
+        <input type="submit" id="new__video" />
+      </div>
+
+      <br /><br />
+    </form>
+  </body>
+</html>

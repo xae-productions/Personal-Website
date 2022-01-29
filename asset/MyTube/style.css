@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Montserrat&family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: white;
+}
+
+/*
+
+ANCHOR
+
+*/
+
+a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+/* 
+
+NAV
+
+*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px;
+  width: 1900px;
+}
+
+.nav__links-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.nav__links {
+  padding: 0 16px;
+}
+
+.nav__header--logo {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+/*
+
+Landing
+
+*/
+
+.landing__img--wrapper {
+  margin: 0;
+}
+
+.landing__img {
+  width: 2000px;
+}
+
+/*
+
+Featured
+
+*/
+
+#featured {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 24px;
+  max-width: 2000px;
+}
+
+.feat__header {
+  font-size: 36px;
+}
+
+.featured__videos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 800px;
+}
+
+.featured__video1,
+.featured__video2,
+.featured__video3 {
+  padding: 0 16px;
+}
+/*
+
+To create that staggered look.
+If there is a better way to do it
+please let me know
+
+
+⬇️ ⬇️ ⬇️ ⬇️
+*/
+
+.featured__video2 {
+  padding-top: 350px;
+}

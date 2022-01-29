@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Montserrat&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/*
+
+NAV
+
+*/
+
+#header {
+  background: url(./asset/landing\ page.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  box-shadow: 0 0 24px black;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.nav__links--list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  position: relative;
+  padding: 0 16px;
+  font-size: 24px;
+}
+
+.nav__link--primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  position: relative;
+
+  background-color: dimgrey;
+  border-radius: 16px;
+  height: 48px;
+  width: 150px;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav__link:hover::before {
+  transform: scaleX(1);
+}
+
+.logo {
+  color: whitesmoke;
+
+  font-size: 24px;
+}
+/*
+
+LANDING
+
+*/
+
+.landing {
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.landing--header {
+  padding: 24px 0;
+
+  font-size: 48px;
+  color: aliceblue;
+}
+
+.landing--subheader {
+  font-size: 32px;
+
+  color: aliceblue;
+}
+
+.learn__more {
+  height: 48px;
+  width: 200px;
+
+  font-size: 28px;
+  background-color: dimgrey;
+  color: whitesmoke;
+
+  border-style: none;
+  border-radius: 16px;
+}
+
+/*
+
+INFO
+
+*/
+
+#info {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 24px 0;
+}
+
+.info--header {
+  padding-bottom: 16px;
+}
+
+.info--discription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+.info--discription1,
+.info--discription2 {
+  width: 450px;
+}
+
+/*
+
+CARDS
+
+*/
+
+#cards {
+  height: 600px;
+
+  background-color: darkseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 500px;
+  width: 300px;
+  border-radius: 12px;
+
+  margin: 0 18px;
+  background-color: whitesmoke;
+
+  box-shadow: 0 0 12px black;
+}
+
+.firstcard--discription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.card--header {
+  padding: 32px 0;
+}
+
+.card--img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/*
+
+MORE INFO
+
+*/
+
+#more--info {
+  height: 250px;
+  margin: 32px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.discription {
+  text-align: center;
+  width: 1000px;
+}
+
+.more--info--header {
+  padding-bottom: 32px;
+}
+
+/*
+
+CONTACT
+
+*/
+
+#contact {
+  height: 300px;
+  display: flex;
+}
+
+.rad--stuff,
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: calc(100% / 2);
+}
+
+.contact {
+  background-color: darkseagreen;
+}
+
+.contact--discription {
+  height: 200px;
+}
+.contact--para,
+.rad--stuff--para {
+  padding: 48px;
+}
+.rad--stuff {
+  background-color: rgba(46, 139, 86, 0.8);
+}
+
+/*
+
+
+Footer
+
+*/
+footer {
+  height: 60px;
+
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project,
+.dev {
+  color: white;
+  padding: 0 32px;
+}
+
+/*
+
+MENU BACKDROP
+
+*/
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: whitesmoke;
+  display: none;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: darkseagreen;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.menu__link {
+  color: white;
+  font-size: 40px;
+}
+
+.btn__menu--close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__links--list {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  /*
+
+    LANDING
+
+    */
+  .landing--header {
+    text-align: center;
+    padding: 14px;
+  }
+
+  /*
+
+  INFO
+
+  */
+
+  #info {
+    height: auto;
+  }
+
+  .info--discription {
+    flex-direction: column;
+  }
+
+  .info--discription1,
+  .info--discription2 {
+    padding: 24px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /* 
+
+  CARDS
+
+  */
+
+  #cards {
+    height: auto;
+    flex-direction: column;
+
+    padding: 18px 0;
+  }
+
+  .card {
+    margin: 24px 0;
+    height: auto;
+  }
+
+  .card--header {
+    font-size: 32px;
+  }
+
+  .card--para {
+    font-size: 24px;
+    padding-bottom: 18px;
+  }
+
+  /*
+
+  MORE INFO
+
+  */
+
+  #more--info {
+    height: auto;
+  }
+
+  .discription {
+    width: auto;
+  }
+
+  .more--info--header {
+    font-size: 32px;
+  }
+
+  .more--info--para {
+    font-size: 24px;
+    padding: 18px;
+  }
+
+  /*
+
+  CONTACT
+
+  */
+
+  #contact {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .rad--stuff,
+  .contact {
+    max-width: 100%;
+  }
+  .contact--discription {
+    height: auto;
+  }
+
+  .contact--header,
+  .rad--stuff--header {
+    font-size: 32px;
+    padding-top: 18px;
+  }
+  .contact--para,
+  .rad--stuff--para {
+    padding: 18px;
+    font-size: 24px;
+  }
+}
